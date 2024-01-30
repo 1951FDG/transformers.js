@@ -20,6 +20,9 @@ from onnxruntime.quantization import (
     QuantType
 )
 
+import os
+os.environ['CURL_CA_BUNDLE'] = ''
+
 DEFAULT_QUANTIZE_PARAMS = {
     'per_channel': True,
     'reduce_range': True,
